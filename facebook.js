@@ -115,7 +115,7 @@ function FacebookCrawler(stepManager, fbConfig) {
 	}
     
     function handleFriendsList() {
-		var friends = self.friends.slice(0,10);
+		var friends = self.friends;
 		console.log("found", friends.length, "friends");
 		var friendsJobs = [];
 		var stream = fs.open(fbConfig.outputFile, {
